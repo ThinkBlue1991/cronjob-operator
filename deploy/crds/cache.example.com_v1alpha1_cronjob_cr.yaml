@@ -1,0 +1,7 @@
+apiVersion: cache.example.com/v1alpha1
+kind: CronJob
+metadata:
+  name: example-cronjob
+spec:
+  # Add fields here
+  size: 3
