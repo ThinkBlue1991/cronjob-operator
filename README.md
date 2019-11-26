@@ -65,9 +65,9 @@ kubectl create -f deploy/crds/cache.example.com_cronjob_crd.yaml
 
 ```shell script
 operator-sdk build hub.geovis.io/zhangjx/cronjob-operator:v0.1
-ocker push hub.geovis.io/zhangjx/cronjob-operator:v0.1
+docker push hub.geovis.io/zhangjx/cronjob-operator:v0.1
 ```
-**Note:** `hub.geovis.io是本地的私有仓库`
+**Note:** `hub.geovis.io是本地的私有仓库；dockerhub:docker pull zhangjx1991/cronjobs:v0.1`
 #### 修改operator.yaml文件
 ```shell script
 sed -i 's|REPLACE_IMAGE|hub.geovis.io/zhangjx/cronjob-operator:v0.1|g' deploy/operator.yaml
